@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Geek Picnic virtual pavilion" name="description">
+    <meta content="Geek Picnic virtual pavilion" name="og:description">
+    <link rel="shortcut icon" href="static/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="static/fonts/font.css">
+    <link rel="stylesheet" href="static/css/main.css" rel="stylesheet" type="text/css">
+    <title>Geek Picnic Online - Pavilion game</title>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/builds.json");
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap-top">
+            <div class="logos">
+                <img class="gp-img" src="static/images/gp-logo.png" alt="geek picnic">
+                <a class="salab-img" href="https://salab.org/" target="_blank">
+                    <img src="static/images/salab-logo.png" alt="salab" href="https://salab.org/">
+                </a>
+            </div>
+             <!-- <iframe class="pavilion" src="http://pavillion.geekpicnic.me/" width="960" height="600" scrolling="no" frameborder="no" seamless>
+            </iframe> -->
+		<div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+            <div class="pattern-f">
+                <img class="pattern-img" src="static/images/pattern-f.png">
+            </div>
+        </div>
+        <div class="wrap-bottom">
+            <div class="pattern-t">
+                <img src="static/images/patterns-t3.png">
+            </div>
+            <div class="title">
+                Virtual Pavilion
+            </div>
+        </div>
+    </div>
+</body>
+</html>

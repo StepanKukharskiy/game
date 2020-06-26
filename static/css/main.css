@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg, rgba(255, 59, 178, 0.36) 0%, #FF3BB2 100%);
+}
+.wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url('../images/setka-bg.png');
+    background-position: center center;
+}
+.wrap-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.wrap-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logos .gp-img {
+    margin-bottom: 50px;
+    width: 90%;
+}
+.logos .salab-img {
+    display: block;
+    width: 80%;
+}
+.salab-img img {
+    width: 100%;
+}
+.pattern-img {
+    width: 80%;
+}
+.pattern-t {
+    position: relative;
+    left: -52px;
+}
+.title {
+    font-family: 'Le Murmure_Regular';
+    font-size: 160px;
+    padding-right: 75px;
+    color: #FAFF69;
+}
+.pavilion {
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0); */
+    min-width: 960px;
+    min-height: 600px;
+}
+@media screen and (max-width: 1610px) {
+    .title {
+        font-size: 120px;
+    }
+}
+@media screen and (max-width: 1455px) {
+    .pattern-t img {
+        width: 80%;
+    }
+    .wrap-top {
+        flex-direction: column;
+    }
+    .pattern-f {
+        display: none;
+    }
+    .logos {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .logos .gp-img {
+        width:  40%;
+        margin-bottom: 0px;
+        margin-right: 20px;
+    }
+    .logos .salab-img {
+        width:  30%;
+    }
+    .title {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .pattern-t {
+        width: 60%;
+    }
+    .pattern-t img {
+        width: 100%;
+    }
+}
